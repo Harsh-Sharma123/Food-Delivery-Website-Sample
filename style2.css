@@ -1,0 +1,246 @@
+/*  CSS Reset  */
+*{
+    padding: 0px;
+    margin: 0px
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    top:0px;
+    left: 0px;
+}
+
+/* Navigation Bar : Logo and Image */
+
+#navbar #logo img{
+    height: 120px;
+    width: 100px;
+    margin: 10px 34px;
+}
+
+/* Navigation Bar : List Items */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 20px; 
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;    
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    /* position: absolute; */
+    height: 807px; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 200px;
+}
+
+#home::before{
+    content: "";
+    background: url("new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 780px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top:0px;
+    left: 0px;
+}
+
+#home h1{
+    text-align: center;
+    color: white;
+}
+
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.btn{
+    cursor: pointer;
+    color: black;
+    margin: 50px;
+    font-size: 1.9rem;
+    padding:06px 20px;
+    border: 2px solid white;
+    background: bwhite;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Services */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 12px;
+    /* position: absolute; */
+    background-color: rgb(235, 222, 187);
+}
+
+#services .box img{
+    height: 150px;
+    width: 150px;
+}
+
+/* Clients */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section{
+    height: 290px;
+}
+
+#client-section::before{
+    content: "";
+    height: 44%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background: url("clients.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#clients .client-item{
+    padding: 34px;
+}
+
+#clients .client-item img{
+    height: 120px;
+    width: 120px;
+}
+
+/* Contact Section */
+
+.contact{
+    position: relative;
+    height: 680px;
+}
+
+.contact::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 26px;
+    margin: 5px;
+}
+
+.form-group input{
+    height: 35px;
+}
+
+.form-group textarea{
+    padding: 10px;
+    font-size: 15px;
+    /* box-sizing: border-box; */
+}
+
+/* Footer */
+
+footer{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 4rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.center{
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+}
+
+.h-secondary{
+    text-align: center;
+    font-size: 1.9rem;
+}
+
